@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+           
+            <nav class="navbar-items">
+                <div class="menu ">
+                    <div class="menu-line"></div>
+                    <div class="menu-line"></div>
+                    <div class="menu-line"></div>
+                </div>
+             
+                <ul >  
+                    <a href="index.html" class="main-logo">
+                        HABERLER.COM
+                    </a> 
+                    <li> 
+                        <a href="http://">HABER</a>
+                    </li>
+                    <li> 
+                        <a href="http://">SON DAKİKA</a>
+                    </li>
+                    <li> 
+                        <a href="http://">GÜNCEL</a>
+                    </li>
+                    <li>
+                        <a href="http://">EKONOMİ</a> </li>
+                    <li> 
+                        <a href="http://">MAGAZİN</a>
+                    </li>
+                    <li> 
+                        <a href="http://">SPOR</a>
+                    </li>
+                    <li> 
+                        <a href="http://">DÜNYA</a>
+                    </li>
+                    <li> 
+                        <a href="http://">TURİZM</a>
+                    </li>
+                    <li> 
+                        <a href="http://">TÜMÜ</a>
+                    </li>
+                    <li><input type="text" placeholder="Haber Ara" id="search-new"> </li> 
+                    <i class="fa-solid fa-magnifying-glass new"></i>
+                    <li><input type="text" placeholder="Üye girişi" id="member-login"></li>
+                    <i class="fa-solid fa-arrow-right-to-bracket login"></i>
+                   
+                </ul>
+                <div class="search-responsive">
+                    <div class="search-respon-ikon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+
+                
+            </nav>
+
+
+
+    </header>
+    <main>
+        <div class="main-container">
+
+            <div class="left-sidebar">
+       
+            </div>
+
+            <div class="main-content">
+                <div class="promo-top" >
+                    <img src="img/promo-top.png" alt="">
+                </div>
+
+
+                <div class="enter-content">
+                    <div class="enter-content-left">
+                        <div class="slideshow-container">
+ 
+                            <div class="mySlides fade">
+                           
+                              <a href="new-detail/detail.html"><img src="new-images/kara-kis.jpg" style="width:100%"></a> 
+                            
+                            </div>
+                          
+                            <div class="mySlides fade"> 
+                              <a href="http://"><img src="new-images/first-img.jpg" style="width:100%"></a> 
+                            
+                            </div>
+                          
+                            <div class="mySlides fade">
+                              
+                              <img src="new-images/second-img.jpg" style="width:100%">
+                              
+                            </div>
+                            <div class="mySlides fade">
+                              
+                              <img src="new-images/acun.jpg" style="width:100%">
+                                
+                            </div>
+
+                            <div class="mySlides fade">
+                              
+                                <img src="new-images/dunya-messi.jpg" style="width:100%">
+                                
+                            </div>
+                            <div class="mySlides fade">
+                              
+                                <img src="new-images/cicek-taksi.jpg" style="width:100%">
+                                
+                            </div>
+                          
+                            <!-- Next and previous buttons -->
+                            <a class="prev" onclick="plusSlides(-1)"><i class="fa-solid fa-chevron-left"></i></a>
+                            <a class="next" onclick="plusSlides(1)"><i class="fa-solid fa-chevron-right"></i></a>
+        
+                            <div class="bottom-nums"  >
+                                <span class="dot" onclick="currentSlide(1)">1</span>
+                                <span class="dot" onclick="currentSlide(2)">2</span>
+                                <span class="dot" onclick="currentSlide(3)">3</span>
+                                <span class="dot" onclick="currentSlide(4)">4</span>
+                                <span class="dot" onclick="currentSlide(5)">5</span>
+                                <span class="dot" onclick="currentSlide(6)">6</span>
+                                <span class="dot" onclick="currentSlide(7)">7</span>
+                                <span class="dot" onclick="currentSlide(8)">8</span>
+                                <span class="dot" onclick="currentSlide(9)">9</span>
+                                <span class="dot" onclick="currentSlide(10)">10</span>
+                                <span class="dot" onclick="currentSlide(11)">11</span>
+                                <span class="dot" onclick="currentSlide(12)">12</span>
+                                <span class="dot" onclick="currentSlide(13)">13</span>
+                                <span class="dot" onclick="currentSlide(14)">14</span>
+                                <span class="dot" onclick="currentSlide(15)">15</span>
+                                <span class="dot" onclick="currentSlide(16)">16</span>
+                                <span class="dot" onclick="currentSlide(17)">17</span>
+                                <span class="dot" onclick="currentSlide(18)">18</span>
+                                <span class="dot" onclick="currentSlide(19)">19</span>
+                                <span class="dot" onclick="currentSlide(20)">20</span>
+                                
+                            </div>       
+                        </div>
+    
+                        <div class="stock">
+                             <span>Dolar<i class="fa-solid fa-caret-up up"></i><span id="stock-price-dolar">18,45</span></span> 
+                             <span>Euro<i class="fa-solid fa-caret-down down"></i><span id="stock-price-euro">18,08</span></span>  
+                             <span>Altın<i class="fa-solid fa-caret-down down"></i><span id="stock-price-gold">983,20</span></span> 
+                             <span>Bitcoin<i class="fa-solid fa-caret-up up"></i><span id="stock-price-bitcoin">19.359</span></span>
+                             <span>Borsa<i class="fa-solid fa-caret-up up"></i><span id="stock-price-stock">3.627</span></span> 
+                        </div>
+
+                        <div class="enter-content-new">
+                            <div class="enter-content-new-in">
+                                <img src="new-images/jesus-un.jpg" alt="">
+                                <p>"Stilime orası uygun" demişt!"Jesus'un prensine beklediği tekllif ara transfer döneminde geliyor</p>
+                            </div>
+                            <div class="enter-content-new-in">
+                                <img src="new-images/four-img.jpg" alt="">
+                                <p>Başı çok büyük belada! PSG'nin dünyaca ünlü yıldızı yıllarca hapis yatabilir</p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+            
+
+                    <div class="enter-promo">
+                        <img src="img/reklam.png" alt="">
+                    </div>
+                </div>
+                
+
+                 <div class="other-news">
+                    <div class="other-news-in">
+                        <img src="new-images/firstnew.jpg" alt="">
+                        <p>Beşiktaş'ta Valerian Ismael ile yollar ayrılıyor mu?</p>
+                    </div>
+                    <div class="other-news-in">
+                        <img src="new-images/four-img.jpg" alt="">
+                        <p>Başı çok büyük belada! PSG'nin dünyaca ünlü yıldızı yıllarca hapis yatabilir</p>
+                    </div>
+                    <div class="other-news-in">
+                        <img src="new-images/second-img.jpg" alt="">
+                        <p>Tatil.com ile yurt dışı turlarının tadını çıkarın. Daha fazla  bilgi için siteyi ziyaret edin.</p>
+                    </div>
+                    <div class="other-news-in-slide">
+                          
+                            <div class="mySlides-two fade ">
+                                <img src="new-images/dolar.jpg" style="width:100%">
+                                <div class="mySlides-two-explain">
+                                    <p>Lorem ipsum dolor  </p>
+                                </div>                               
+                            </div>                           
+                            <div class="mySlides-two fade">                                
+                                <img src="new-images/korona.jpg" style="width:100%">
+                                <div class="mySlides-two-explain">
+                                    <p>  amet consectetur adipisicing elit.  </p>
+                                </div>                                
+                            </div>                           
+                            <div class="mySlides-two fade">                               
+                                <img src="new-images/thy.jpg" style="width:100%"> 
+                                <div class="mySlides-two-explain">
+                                    <p> olor sit amet consectetur adipisic </p>
+                                </div>                             
+                            </div>
+                            
+                            
+                            <div class="bottom-nums-second">
+                              <span class="dot-second" onclick="currentSlide(1)">1</span>
+                              <span class="dot-second" onclick="currentSlide(2)">2</span>
+                              <span class="dot-second" onclick="currentSlide(3)">3</span>
+                              <span class="dot-second" onclick="currentSlide(4)">4</span>
+                              <span class="dot-second" onclick="currentSlide(5)">5</span>
+                              <span class="dot-second" onclick="currentSlide(6)">6</span>
+                              <span class="dot-second" onclick="currentSlide(7)">7</span>
+                              <span class="dot-second" onclick="currentSlide(8)">8</span>
+                              <span class="dot-second" onclick="currentSlide(9)">9</span>
+                              <span class="dot-second" onclick="currentSlide(10)">10</span>
+                              <span class="dot-second" onclick="currentSlide(11)">11</span>
+                              <span class="dot-second" onclick="currentSlide(12)">12</span>
+                              <span class="dot-second" onclick="currentSlide(13)">13</span>
+                              <span class="dot-second" onclick="currentSlide(14)">14</span>
+                        
+                            </div>
+                        
+                    
+                    </div>
+                    <div class="other-news-in">
+                        <img src="new-images/bir-donem.jpg" alt="">
+                        <p>Bir dönem neredeyse her gün ölüm haberi geliyordu! Çaycı Hüseyin'in son hali ortaya çıktı</p>
+                    </div>
+                    <div class="other-news-in">
+                        <img src="new-images/30-yillik.jpg" alt="">
+                        <p>30 yıllık mücadelede mutlu son! İşgalden kurtarılan 16 dönüm arazi artık vatandaşın hizmetinde</p>
+                    </div>
+                    <div class="other-news-in">
+                        <img src="new-images/acun.jpg" alt="">
+                        <p>Acun Ilıcalı'nın takımı stadında görülmemiş anlar! Hakem kale direklerini kestirdi</p>
+                    </div>
+                    <div class="other-news-in">
+                        <img src="new-images/korona.jpg" alt="">
+                        <p>Korona tamam sırada çağın vebası var! Prof. Dr. Uğur Şahin: Kanser aşıları 2030'dan önce hazır olacak</p>
+                    </div>
+                    <div class="other-news-in">
+                        <img src="new-images/cicek-taksi.jpg" alt="">
+                        <p>Herkes onu Çiçek Taksi'den tanıyor!</p>
+                    </div>
+                    <div class="other-news-in">
+                        <img src="new-images/masterchef.jpg" alt="">
+                        
+                    </div>
+                    <div class="other-news-in">
+                        <img src="new-images/masterchef.jpg" alt="">
+                        <p>MasterChef Türkiye'de yarışmaya veda eden isim Çağatay Akgül oldu</p>
+                    </div>
+                    <div class="other-news-in">
+                        <img src="new-images/thy.jpg" alt="">
+                        <p>İstanbul Havalimanı'nda skandal! 4 dev firmanın çalışanları yedikleri yemekten zehirlendi</p>
+                    </div>
+                    <div class="other-news-in">
+                        <img src="new-images/saglik-bakani-ndan-endise-yaratan-uyari_15364677_49.jpg" alt="">
+                        <p>Almanya Sağlık Bakanı uyardı</p>
+                    </div>
+                    <div class="other-news-in">
+                        <img src="new-images/dolar.jpg" alt="">
+                        <p>Dolar/TL, 18,59 seviyesinden işlem görüyor</p>
+                    </div>
+                    <div class="other-news-in">
+                        <img src="new-images/kahreden.jpg" alt="">
+                        <p>Kahreden görüntü! 25 milyonluk servet,araç mezarlığında göz göre göre çürüyor</p>
+                    </div>
+                    <div class="other-news-in-youtube">
+                        <div class="youtube">
+                            <div class="youtube-top">
+                                <div class="youtube-top-left">
+                                    <img src="img/haberler.com" alt="" id="haberler-youtube-top-logo" >
+                                    <h1 id="youtube-top-left-in">Haberler.com 
+                                        <small>83,4bn</small> 
+                                    </h1>
+                                     
+                                </div> 
+                                <div  class="youtube-top-right">
+                                    <img src="img/YouTube_logo.png" alt="" id="youtube-top-logo">
+                                    <button type="button">Abone ol</button>
+                                </div>
+                            </div>
+                            <hr>
+
+                            <div class="youtube-middle">
+                                <div>
+                                    <a href="http://">
+                                        <img src="new-images/youtube-first.jpg" alt="">
+                                        <p>fmaeıofeaoıfnaf</p>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="http://">
+                                        <img src="new-images/youtube-second.jpg" alt="">
+                                        <p>fmaeıofeaoıfnaf</p>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="http://">
+                                        <img src="new-images/youtube-third.jpg" alt="">
+                                    <p>fmaeıofeaoıfnaf</p>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="http://">
+                                        <img src="new-images/youtube-fourth.jpg" alt="">
+                                    <p>fmaeıofeaoıfnaf</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <hr>
+
+                            <div class="youtube-bottom">
+                                <a href="http://"><h3>TÜMÜNÜ GÖR</h3></a> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="other-news-in">
+                        <img src="new-images/dunya-messi.jpg" alt="">
+                        <p>Dünya, Messi'nin kullandığı frikik öncesi Marsilya kalecisinin aldığı önlemi konuşuyor</p>
+                    </div>
+                    <div class="other-news-in">
+                        <img src="new-images/susmus.jpg" alt="">
+                        <p>Yürek Çıkmazı dizisinden ilk fragman</p>
+                    </div>
+                    <div class="other-news-in">
+                        <img src="new-images/masterchef.jpg" alt="">
+                        <p>MasterChef Türkiye'de yarışmaya veda eden isim Çağatay Akgül oldu</p>
+                    </div>
+                    <div class="other-news-in">
+                        <img src="new-images/second-img.jpg" alt="">
+                        <p>Tatil.com ile yurt dışı turlarının tadını çıkarın. Daha fazla  bilgi için siteyi ziyaret edin.</p>
+                    </div>
+                    <div class="other-news-in">
+                        <img src="new-images/four-img.jpg" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur  !</p>
+                    </div>
+                    <div class="other-news-in">
+                        <img src="new-images/four-img.jpg" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur  !</p>
+                    </div>
+                    <div class="other-news-in">
+                        <img src="new-images/four-img.jpg" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur  !</p>
+                    </div>
+                    <div class="other-news-authors">
+                       
+                         <a href="http://">
+                            <div class="other-news-authors-top">Yazarlar <span>Tümü</span></div>
+                        <div class="other-news-authors-in">
+                            <div>
+                                <img src="new-images/author-one.jpg" alt="">
+                                <span>
+                                    <h1>Özge Avcu</h1>
+                                    <h4>Duygu ve mantık nedir?</h4>
+                                </span>                                       
+                            </div>
+                            <hr>
+                            <div>
+                                <img src="new-images/author-two.jpg" alt="">
+                                 <span>
+                                    <h1>Besim Türkoğlu</h1>
+                                    <h4>Uyuyan zeka</h4>
+                                 </span>      
+                            </div>
+                        </div>
+                         </a>
+                 
+                        
+                    </div>
+                    <div class="other-news-in">
+                        <img src="new-images/surucusu.jpg" alt="">
+                        <p>Sürücü kontrolden çıktı! Korkulu anlar yaşandı</p>
+                    </div>
+                    <div class="other-news-in">
+                        <img src="new-images/second-img.jpg" alt="">
+                        <p>Tatil.com ile yurt dışı turlarının tadını çıkarın. Daha fazla  bilgi için siteyi ziyaret edin.</p>
+                    </div>
+                    <div class="other-news-in">
+                        <img src="new-images/firstnew.jpg" alt="">
+                        <p>Beşiktaş'ta Valerian Ismael ile yollar ayrılıyor mu?</p>
+                    </div>
+                    <div class="other-news-in">
+                        <img src="new-images/kahreden.jpg" alt="">
+                        <p>Kahreden görüntü! 25 milyonluk servet,araç mezarlığında göz göre göre çürüyor</p>
+                    </div>
+                    <div class="other-news-in">
+                        <img src="new-images/four-img.jpg" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur  !</p>
+                    </div>
+                    <div class="other-news-in">
+                        <img src="new-images/saglik-bakani-ndan-endise-yaratan-uyari_15364677_49.jpg" alt="">
+                        <p>Almanya Sağlık Bakanı uyardı</p>
+                    </div>
+                    <div class="other-news-in">
+                        <img src="new-images/second-img.jpg" alt="">
+                        <p>Tatil.com ile yurt dışı turlarının tadını çıkarın. Daha fazla  bilgi için siteyi ziyaret edin.</p>
+                    </div>
+                    <div class="other-news-in">
+                        <img src="new-images/four-img.jpg" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur  !</p>
+                    </div>
+                    <div class="other-news-in">
+                        <img src="new-images/second-img.jpg" alt="">
+                        <p>Tatil.com ile yurt dışı turlarının tadını çıkarın. Daha fazla  bilgi için siteyi ziyaret edin.</p>
+                    </div>
+                    <div class="other-news-in">
+                        <img src="new-images/four-img.jpg" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur  !</p>
+                    </div>
+                   
+                  
+                 </div>
+                  
+                    
+            </div>
+
+            <div class="right-sidebar">
+       
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="main-footer">
+            <div class="main-footer-left">
+
+            </div>
+            <div class="main-footer-middle">
+                <div class="footer-top">
+                    <h1>Haberler.com</h1>
+                </div>
+
+                <div class="footer-middle">
+                      <div class="footer-middle-column-one">
+                        <a href="http://" class="text-title"><span>Haber</span></a> 
+                        <a href="http://" class="text"><span>Ekonomi</span></a>
+                        <a href="http://" class="text"><span>Spor</span></a>
+                        <a href="http://" class="text"><span>Magazin</span></a>
+                        <a href="http://" class="text"><span>Dünya</span></a>
+                        <a href="http://" class="text"><span>Politika</span></a>
+                        <a href="http://" class="text"><span>3. Sayfa</span></a>
+                        <a href="http://" class="text-end"><span>Gündem</span></a>
+                      </div>
+
+                      <div class="footer-middle-column-two ">
+                        <a href="http://" class="text-title"><span>Son Dakika</span></a> 
+                        <a href="http://" class="text"><span>Sağlık</span></a>
+                        <a href="http://" class="text"><span>Teknoloji</span></a>
+                        <a href="http://" class="text"><span>Finans</span></a>
+                        <a href="http://" class="text"><span>Turizm</span></a>
+                        <a href="http://" class="text"><span>Yazarlar</span></a>
+                        <a href="http://" class="text"><span>Yerel Haberler</span></a>
+                        <a href="http://" class="text-end"><span>Haber Arşivi</span></a>
+                      </div>
+                      <div class="footer-middle-column-three">
+                        <a href="http://" class="text-title"><span>Haberler</span></a> 
+                        <a href="http://" class="text"><span>Lis Truss</span></a>
+                        <a href="http://" class="text"><span>Joe Biden</span></a>
+                        <a href="http://" class="text"><span>Mehmet Çakın</span></a>
+                        <a href="http://" class="text"><span>Meral Akşener</span></a>
+                        <a href="http://" class="text"><span>Vahit Kirişçi</span></a>
+                        <a href="http://" class="text"><span>Vahit Kirişçi</span></a>
+                        <a href="http://" class="text-end"><span>Ali Babacan</span></a>
+                      </div>
+                      <div class="footer-middle-column-four">
+                        <a href="http://" class="text-title"><span>Magazin</span></a> 
+                        <a href="http://" class="text"><span>Tarkan</span></a>
+                        <a href="http://" class="text"><span>Oğuzhan Koç</span></a>
+                        <a href="http://" class="text"><span>Hamdi Alkan</span></a>
+                        <a href="http://" class="text"><span>Haluk Levent</span></a>
+                        <a href="http://" class="text"><span>Buğra Gülsoy</span></a>
+                        <a href="http://" class="text"><span>Oğuzhan Koç</span></a>
+                        <a href="http://" class="text-end"><span>Tarkan</span></a>
+                      </div>
+                      <div class="footer-middle-column-five">
+                        <a href="http://" class="text-title"><span>Spor</span></a> 
+                        <a href="http://" class="text"><span>Muslera</span></a>
+                        <a href="http://" class="text"><span>Nur Tatar</span></a>
+                        <a href="http://" class="text"><span>Erol Bulut</span></a>
+                        <a href="http://" class="text"><span>Çağdaş Akan</span></a>
+                        <a href="http://" class="text"><span>Jorge Jesus</span></a>
+                        <a href="http://" class="text"><span>Alper Yılmaz</span></a>
+                        <a href="http://" class="text-end"><span>Abdullah Avcı</span></a>
+                      </div>
+                      <div class="footer-middle-column-six">
+                        <a href="http://" class="text-title"><span>Haberler.com Tümü</span></a> 
+                        <a href="http://" class="text"><span>Hava Durumu</span></a>
+                        <a href="http://" class="text"><span>Namaz Vakitleri</span></a>
+                        <a href="http://" class="text"><span>Gamegar</span></a>
+                        <a href="http://" class="text"><span>Seçim Sonuçları</span></a>
+                        <a href="http://" class="text"><span>Şans Oyunları</span></a>
+                        <a href="http://" class="text"><span>Rüya Tabirleri</span></a>
+                        <a href="http://" class="text-end"><span>Yemek Tarifleri</span></a>
+                      </div>
+                 
+                </div>
+
+                <div class="footer-bottom">
+                    <div class="footer-bottom-left">
+                        <div class="footer-bottom-column-one">
+                            <a href="http://" class="text"><span >Hakkımızda</span></a> 
+                            <a href="http://" class="text"><span>Yayın İlkeleri</span></a>
+                            <a href="http://" class="text"><span>Kullanım Şartları</span></a>
+                            <a href="http://" class="text"><span>Gizlilik Politikası</span></a>
+                            <a href="http://" class="text"><span>Çerez Politikası</span></a>
+                            <a href="http://" class="text"><span>Kişisel Verilerin Korunması</span></a>
+                            <a href="http://" class="text-end"><span>Veri Sahibi Başvuru Formu</span></a>
+                            
+                        </div>
+                        <div class="footer-bottom-column-two">
+                            <a href="http://" class="text"><span>Künye</span></a> 
+                            <a href="http://" class="text"><span>İletişim</span></a>
+                            <a href="http://" class="text"><span>Reklam</span></a>
+                            <a href="http://" class="text"><span>Webmaster</span></a>
+                            <a href="http://" class="text"><span>İşbirliği</span></a>
+                            <a href="http://" class="text"><span>RSS</span></a>
+                            <a href="http://" class="text-end"><span>Sitene Ekle</span></a>
+                            
+                        </div>
+                       
+                       
+                        
+                         
+                    </div>
+
+                    <div class="footer-bottom-right">
+                        <div class="footer-bottom-right-social-media">
+                            <div class="footer-bottom-right-social-media-ikon">
+                                <i class="fa-brands fa-facebook"></i> 
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-linkedin-in"></i>
+                                <i class="fa-brands fa-whatsapp"></i> 
+                                <i class="fa-brands fa-itunes-note"></i>
+                                <i class="fa-brands fa-spotify"></i>
+                                <i class="fa-solid fa-rss"></i>
+                                <i class="fa-brands fa-wordpress-simple"></i>
+                                <i class="fa-brands fa-youtube"></i>
+                                <i class="fa-brands fa-tiktok"></i>
+                                <i class="fa-brands fa-telegram"></i>
+                                <i class="fa-brands fa-dailymotion"></i>
+                            </div>
+                             
+                        </div>
+                        <div class="footer-bottom-right-store">
+                            <img src="footer-img/app_icon_2x_ios.png" alt="">
+                            <img src="footer-img/app_icon_2x_android.png" alt="">
+                            <img src="footer-img/app_icon_2x_huawei.png" alt="">
+                        </div>
+                    </div>
+                   
+                </div>
+
+                <div class="footer-end">
+                    <p>Haberler -Haber, Spor, Magazin ve Son Dakika Haberleri</p>
+                    <span>HABERLER.COM</span>
+                    <small>Haberler.com: Türkiye'nin en kapsamlı haber sitesi. Son dakika haberleri ve güncel haberler Haberler.com'da.</small>
+                    <h4>Haber | Son Dakika | Haberler</h4>
+                    <small>&copy 2022</small>
+                    <a href="http://"><span>[Hata Bildir]</span></a>
+                  
+                </div>
+
+                <div class="footer-cookies">
+                    <div class="footer-cookies-in">
+                        <p>Sizlere daha iyi hizmet sunabilmek adına sitemizde <a href="http://">çerez</a> konumlandırmaktayız. Kişisel verileriniz, KVKK ve GDPR kapsamında toplanıp işlenir. Detaylı bilgi almak için <a href="http://">Aydınlatma Metnimizi</a> inceleyebilirsiniz.</p>
+                        <button type="button">Tüm Çerezleri Kabul Et</button>
+                        <a href="http://"><span>Çerez Ayarlarına Git</span></a>
+                    </div>
+    
+                </div>
+               
+            </div>
+            <div class="main-footer-right">
+
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Roboto:wght@300;400&display=swap');
+        </style>
+    <script src="https://kit.fontawesome.com/c9fb8d7214.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
